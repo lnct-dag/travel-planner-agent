@@ -260,11 +260,9 @@ Include the following screenshots in the repository:
 
 ## Author
 
-**Student Name:** YOUR NAME
+**Student Name:** DIVYANSH AGARWAL
 
-**College:** YOUR COLLEGE
-
-**Email:** YOUR EMAIL
+**College:** LNCT GROUP OF COLLEGES
 
 **AICTE IBM University Engagement Program**
 
