@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelPlanner AI — Chat</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="chat-header">
+    <div class="chat-header-left">
+      <div class="bot-avatar">
+        <svg viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="0"  width="32" height="3"  fill="currentColor"/>
+          <rect x="6" y="5"  width="20" height="3"  fill="currentColor"/>
+          <rect x="6" y="10" width="20" height="3"  fill="currentColor"/>
+          <rect y="15" width="32" height="3"  fill="currentColor"/>
+          <rect x="6" y="20" width="20" height="3"  fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="chat-header-info">
+        <span class="chat-bot-name">TravelPlanner <span class="blue">AI</span></span>
+        <span class="chat-status" id="chatStatus">
+          <span class="status-dot online"></span> Online · Powered by IBM Granite
+        </span>
+      </div>
+    </div>
+    <button class="btn-new-chat" id="btnNewChat" title="New conversation">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+      </svg>
+      New Chat
+    </button>
+  </header>
+
+  <!-- ══ CHAT WINDOW ══ -->
+  <main class="chat-main">
+    <div class="chat-messages" id="chatMessages">
+      <!-- messages injected by JS -->
+    </div>
+  </main>
+
+  <!-- ══ INPUT BAR ══ -->
+  <footer class="chat-input-bar">
+    <!-- Quick-pick chips shown during conversation flow -->
+    <div class="chip-row" id="chipRow"></div>
+
+    <form class="chat-form" id="chatForm" autocomplete="off">
+      <input
+        type="text"
+        id="chatInput"
+        class="chat-input"
+        placeholder="Type your destination or answer…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button type="submit" class="btn-send" id="btnSend" aria-label="Send">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </form>
+    <p class="input-hint">Press <kbd>Enter</kbd> to send · IBM Granite AI generates your personalised plan</p>
+  </footer>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
